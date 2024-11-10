@@ -1,0 +1,8 @@
+# Browsers that we support
+
+defaults
+not dead
+last 2 versions
+maintained node versions
+Firefox ESR
+since 2015
