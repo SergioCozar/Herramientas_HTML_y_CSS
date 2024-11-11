@@ -1,0 +1,133 @@
+@import "variables";
+
+.categoria-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: fit-content;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: $primary-color;
+  }
+
+  .ruta-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+
+    .ruta-item {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      &__img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: cover;
+      }
+
+      &__content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        &__title {
+          font-size: 1.5rem;
+          color: $primary-color;
+        }
+
+        &__location,
+        &__time,
+        &__water {
+          font-size: 1.1rem;
+          margin: 0.2rem 0;
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+
+      &--disabled {
+        opacity: 0.65;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .categoria-main-container h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: $laptop-breakpoint) {
+  .categoria-main-container .ruta-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .categoria-main-container .ruta-item {
+    &__content {
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__location,
+      &__time,
+      &__water {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .categoria-main-container {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .categoria-main-container .ruta-list {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+
+    .ruta-item {
+      margin-bottom: 2rem;
+
+      &__img {
+        max-height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: $phone-breakpoint) {
+  .categoria-main-container {
+    padding: 1rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

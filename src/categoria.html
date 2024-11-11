@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cantabria con Perro | Rutas</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
+    <link rel="stylesheet" href="styles/categoria.scss" />
+    <script type="module" src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.ico" />
+  </head>
+  <body>
+    <include src="src/header.html"></include>
+    <main class="categoria-main-container">
+      <h1>Rutas para pasear con tu perro en Cantabria</h1>
+      <section class="ruta-list">
+        <article class="ruta-item" onclick="window.location.href='index.html'">
+          <img
+            class="ruta-item__img"
+            src="./assets/img/ruta-costa-quebrada.jpg"
+            alt="Ruta de playa"
+          />
+          <div class="ruta-item__content">
+            <h2 class="ruta-item__content__title">Costa quebrada</h2>
+            <p class="ruta-item__content__location">
+              <span>Ubicación:</span> De Playa de la Arnía a Portio
+            </p>
+            <p class="ruta-item__content__time">
+              <span>Tiempo estimado:</span> 1 hora y media
+            </p>
+            <p class="ruta-item__content__water">
+              <span>Fuentes de agua:</span> No
+            </p>
+          </div>
+        </article>
+        <article class="ruta-item ruta-item--disabled">
+          <img
+            class="ruta-item__img"
+            src="./assets/img/bosque-secuoyas.jpg"
+            alt="Ruta de bosque"
+          />
+          <div class="ruta-item__content">
+            <h2 class="ruta-item__content__title">Bosque Secuoyas</h2>
+            <p class="ruta-item__content__location">
+              <span>Ubicación:</span> Udías
+            </p>
+            <p class="ruta-item__content__time">
+              <span>Tiempo estimado:</span> 1 hora
+            </p>
+            <p class="ruta-item__content__water">
+              <span>Fuentes de agua:</span> Sí
+            </p>
+          </div>
+        </article>
+        <article class="ruta-item ruta-item--disabled">
+          <img
+            class="ruta-item__img"
+            src="./assets/img/ruta-puentes.jpg"
+            alt="Ruta de montaña"
+          />
+          <div class="ruta-item__content">
+            <h2 class="ruta-item__content__title">Ruta de los Puentes</h2>
+            <p class="ruta-item__content__location">
+              <span>Ubicación:</span> Ucieda
+            </p>
+            <p class="ruta-item__content__time">
+              <span>Tiempo estimado:</span> 5 horas
+            </p>
+            <p class="ruta-item__content__water">
+              <span>Fuentes de agua:</span> Sí
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
