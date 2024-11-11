@@ -1,0 +1,144 @@
+@import "variables";
+@import "header-styles";
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: $background-color;
+}
+
+main {
+  height: 100%;
+}
+
+.body-portada {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+
+  .content {
+    width: 100%;
+  }
+
+  .portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+
+    .title-container {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+
+      &__title {
+        width: 100%;
+        font-size: 4rem;
+        color: $primary-color;
+        margin: 0;
+      }
+      &__subtitle {
+        font-size: 2rem;
+        color: $primary-color;
+        margin: 0;
+        max-width: 500px;
+      }
+    }
+
+    .imagen-perro {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .body-portada {
+    .portada {
+      .imagen-perro {
+        height: 350px;
+      }
+    }
+  }
+}
+@media (max-width: $laptop-breakpoint) {
+  .body-portada {
+    .portada {
+      align-items: center;
+
+      .title-container {
+        &__title {
+          font-size: 3rem;
+        }
+        &__subtitle {
+          font-size: 2rem;
+        }
+      }
+
+      .imagen-perro {
+        height: 250px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet-breakpoint) {
+  .body-portada {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/fondo-portada.svg");
+
+    .imagen-fondo {
+      display: none;
+    }
+
+    .portada {
+      .title-container {
+        &__title {
+          font-size: 2rem;
+        }
+        &__subtitle {
+          font-size: 1.5rem;
+        }
+      }
+
+      .imagen-perro {
+        display: none;
+      }
+    }
+  }
+}

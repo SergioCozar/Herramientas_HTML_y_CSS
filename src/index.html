@@ -2,12 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.scss" />
+    <title>Cantabria con Perro | Portada</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
     <script type="module" src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- add the dog as favicon -->
+    <link rel="icon" href="./assets/favicon.ico" />
   </head>
-  <body>
-    <include src="src/header.html"></include>
-    <main>My content</main>
+  <body class="body-portada">
+    <img
+      src="./assets/img/fondo-portada.svg"
+      alt="Perro"
+      class="imagen-fondo"
+    />
+    <div class="content">
+
+      <!-- Header -->
+      <include src="src/components/header.html"></include>
+      <!-- Main -->
+      <main>
+        <div class="portada">
+          <div class="title-container">
+            <h1 class="title-container__title">CANTABRIA</h1>
+            <p class="title-container__subtitle">
+              Descubre Cantabria con tu perro
+            </p>
+          </div>
+          <img
+          src="./assets/img/standing-dog.png"
+          alt="Perro"
+          class="imagen-perro"
+          />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
