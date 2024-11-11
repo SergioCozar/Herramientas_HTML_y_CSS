@@ -2,12 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Detalle</title>
-    <link rel="stylesheet" href="styles.scss" />
+    <title>Costa Quebrada - Detalles</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
+    <link rel="stylesheet" href="styles/detalle.scss" />
     <script type="module" src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.ico" />
   </head>
   <body>
     <include src="src/header.html"></include>
-    <main>My content</main>
+    <main class="detalle-main-container">
+      <h1 class="detalle-title">Costa Quebrada</h1>
+      <section class="detalle-content">
+        <div class="detalle-image">
+          <img
+            src="./assets/img/ruta-costa-quebrada.jpg"
+            alt="Vista de Costa Quebrada"
+          />
+        </div>
+        <div class="detalle-info">
+          <p class="detalle-info__item">
+            <strong>Ubicación:</strong> De Playa de la Arnía a Portio
+          </p>
+          <p class="detalle-info__item">
+            <strong>Tiempo estimado:</strong> 1 hora y media
+          </p>
+          <p class="detalle-info__item"><strong>Distancia:</strong> 3,6 km</p>
+          <p class="detalle-info__item"><strong>Fuentes de agua:</strong> No</p>
+          <p class="detalle-info__item">
+            <strong>Terreno:</strong> Costero y rocoso
+          </p>
+          <p class="detalle-info__item">
+            <strong>Recomendaciones:</strong> Llevar buen calzado, correa, agua
+            extra y bolsas para desechos
+          </p>
+        </div>
+      </section>
+      <section class="detalle-description">
+        <h2>Descripción de la Ruta</h2>
+        <p>
+          La Costa Quebrada es un recorrido espectacular por la costa
+          cantábrica, ideal para pasear con tu perro. El sendero comienza en la
+          Playa de Arnía y se extiende hasta la Playa del Portio. El paseo de
+          ida y vuelta ofrece impresionantes vistas a los acantilados y
+          formaciones rocosas. Si buscas un recorrido más largo, puedes
+          continuar más allá de las playas en ambas direcciones. Aunque no se
+          puede acceder a las playas con perros en verano, el resto del
+          recorrido es perfectamente adecuado para caminar con tu mascota.
+        </p>
+
+        <p>
+          Esta ruta es ideal para perros activos, ya que tiene mucho espacio
+          abierto y terreno fácil para caminar. Sin embargo, hay algunos tramos
+          cerca de los acantilados donde es importante mantener a los perros
+          bajo control, ya que puede ser un poco peligroso El sendero no tiene
+          sombra, por lo que es recomendable llevar agua, especialmente para tu
+          mascota, ya que no hay fuentes en el camino. En el parking de la Playa
+          de Arnía hay un restaurante donde podría pedirse agua para los perros.
+        </p>
+
+        <p>
+          La ruta ofrece un ambiente tranquilo y alejado del bullicio urbano,
+          ideal para disfrutar de la naturaleza y la belleza del paisaje
+          costero. Es una experiencia relajante para quienes aman la naturaleza,
+          aunque se debe tener cuidado con los perros gamberros, ya que en los
+          prados cercanos puede haber ganado. Además, los acantilados no tienen
+          barreras protectoras ni señalización, por lo que es importante estar
+          atentos para evitar cualquier accidente. A pesar de estas
+          precauciones, es un lugar perfecto para caminar y disfrutar de la
+          tranquilidad del entorno.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
