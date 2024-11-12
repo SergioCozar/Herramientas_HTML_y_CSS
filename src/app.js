@@ -1,3 +1,5 @@
+import "animate.css";
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.querySelector(".navbar__toggle");
   const closeButton = document.querySelector(".navbar__close-toggle");
