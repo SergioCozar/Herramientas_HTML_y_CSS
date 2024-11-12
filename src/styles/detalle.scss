@@ -36,8 +36,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 0.3rem;
+      gap: 2rem;
       font-size: 1.1rem;
+      padding: 0;
 
       &__item {
         font-weight: 400;
@@ -67,6 +68,42 @@
       color: #555;
       margin-bottom: 1rem;
       text-align: justify;
+    }
+  }
+
+  .detalle-recomendadas {
+    max-width: 1000px;
+    margin-top: 3rem;
+    width: 100%;
+
+    h2 {
+      font-size: 1.8rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+
+    &__list {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 8px;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+          font-weight: 500;
+        }
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
     }
   }
 }
