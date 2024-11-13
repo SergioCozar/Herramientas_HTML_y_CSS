@@ -72,16 +72,20 @@
 
 @media (max-width: $tablet-breakpoint) {
   .enlaces-main-contenedor {
+    height: fit-content;
+
     .enlaces-titulo {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
     }
 
     .enlaces-contenido {
-      font-size: 2rem;
-
       h2 {
         font-size: 2.5rem;
+        margin: 1.5rem 0 1rem 0;
       }
+
+      font-size: 2rem;
     }
   }
 }
