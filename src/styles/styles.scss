@@ -43,7 +43,7 @@ main {
   display: flex;
   gap: 2rem;
 
-  .content {
+  .contenido {
     width: 100%;
   }
 
@@ -54,7 +54,7 @@ main {
     align-items: flex-start;
     height: 100%;
 
-    .title-container {
+    .titulo-contenedor {
       width: fit-content;
       height: fit-content;
       display: flex;
@@ -63,13 +63,13 @@ main {
       text-align: center;
       margin-bottom: 60px;
 
-      &__title {
+      &__titulo {
         width: 100%;
         font-size: 4rem;
         color: $primary-color;
         margin: 0;
       }
-      &__subtitle {
+      &__subtitulo {
         font-size: 2rem;
         color: $primary-color;
         margin: 0;
@@ -100,11 +100,11 @@ main {
     .portada {
       align-items: center;
 
-      .title-container {
-        &__title {
+      .titulo-contenedor {
+        &__titulo {
           font-size: 3rem;
         }
-        &__subtitle {
+        &__subtitulo {
           font-size: 2rem;
         }
       }
@@ -127,13 +127,14 @@ main {
     }
 
     .portada {
-      .title-container {
-        &__title {
-          font-size: 2rem;
+      .titulo-contenedor {
+        &__titulo {
+          font-size: 7rem;
         }
-        &__subtitle {
-          font-size: 1.5rem;
+        &__subtitulo {
+          font-size: 2.7rem;
         }
+        padding-bottom: 3rem;
       }
 
       .imagen-perro {
