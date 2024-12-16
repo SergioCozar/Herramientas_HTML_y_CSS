@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Costa Quebrada - Detalles</title>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/detalle.scss" />
@@ -20,11 +21,23 @@
       <h1 class="detalle-titulo">Costa Quebrada</h1>
       <section class="detalle-contenido">
         <div class="detalle-imagen">
-          <img
-            src="./assets/img/ruta-costa-quebrada.jpg"
-            alt="Vista de Costa Quebrada"
-          />
+          <picture>
+            <source
+              srcset="./assets/img/ruta-costa-quebrada-500w.jpg"
+              media="(max-width: 500px)"
+            />
+            <source
+              srcset="./assets/img/ruta-costa-quebrada.jpg"
+              media="(min-width: 501px)"
+            />
+            <img
+              src="./assets/img/ruta-costa-quebrada.jpg"
+              alt="Vista de Costa Quebrada"
+            />
+          </picture>
         </div>
+        
+
         <ul class="detalle-info">
           <li class="detalle-info__item">
             <strong>Ubicación:</strong> De Playa de la Arnía a Portio
@@ -85,6 +98,11 @@
       <section class="detalle-recomendadas">
         <h2>Otras rutas recomendadas</h2>
         <ul class="detalle-recomendadas__lista">
+          <!-- <img
+            class="pointing-finger"
+            src="./assets/img/pointing-finger.gif"
+            alt="dedo señalando"
+          /> -->
           <li>
             <a href="#">Bosque Secuoyas</a> - Ubicación: Udías, Tiempo: 1 hora
           </li>
@@ -94,6 +112,15 @@
           </li>
         </ul>
       </section>
+
+      <div class="detalle-dog-container">
+        <img
+        class="detalle-dog"
+        src="./assets/img/detalle-dog.png"
+        alt="perro"
+        />
+      </div>
     </main>
+    <include src="src/footer.html"></include>
   </body>
 </html>

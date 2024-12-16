@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cantabria con Perro | Rutas</title>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/categoria.scss" />
@@ -23,11 +24,23 @@
       <section class="ruta-lista">
         <article class="ruta-item">
           <a href="detalle.html">
-            <img
-              class="ruta-item__img"
-              src="./assets/img/ruta-costa-quebrada.jpg"
-              alt="Ruta de playa"
-            />
+            <picture>
+              <source
+                class="ruta-item__img"
+                srcset="./assets/img/ruta-costa-quebrada-500w.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                class="ruta-item__img"
+                srcset="./assets/img/ruta-costa-quebrada.jpg"
+                media="(min-width: 501px)"
+              />
+              <img
+                class="ruta-item__img"
+                src="./assets/img/ruta-costa-quebrada.jpg"
+                alt="Vista de Costa Quebrada"
+              />
+            </picture>
             <div class="ruta-item__contenido">
               <h2 class="ruta-item__contenido__titulo">Costa quebrada</h2>
               <p class="ruta-item__contenido__info">
@@ -43,11 +56,23 @@
           </a>
         </article>
         <article class="ruta-item ruta-item--deshabilitado">
-          <img
-            class="ruta-item__img"
-            src="./assets/img/bosque-secuoyas.jpg"
-            alt="Ruta de bosque"
-          />
+          <picture>
+            <source
+              class="ruta-item__img"
+              srcset="./assets/img/bosque-secuoyas-500w.jpg"
+              media="(max-width: 500px)"
+            />
+            <source
+              class="ruta-item__img"
+              srcset="./assets/img/bosque-secuoyas.jpg"
+              media="(min-width: 501px)"
+            />
+            <img
+              class="ruta-item__img"
+              src="./assets/img/bosque-secuoyas.jpg"
+              alt="Ruta de bosque"
+            />
+          </picture>
           <div class="ruta-item__contenido">
             <h2 class="ruta-item__contenido__titulo">Bosque Secuoyas</h2>
             <p class="ruta-item__contenido__info">
@@ -62,11 +87,23 @@
           </div>
         </article>
         <article class="ruta-item ruta-item--deshabilitado">
-          <img
-            class="ruta-item__img"
-            src="./assets/img/ruta-puentes.jpg"
-            alt="Ruta de montaña"
-          />
+          <picture>
+            <source
+              class="ruta-item__img"
+              srcset="./assets/img/ruta-puentes-500w.jpg"
+              media="(max-width: 500px)"
+            />
+            <source
+              class="ruta-item__img"
+              srcset="./assets/img/ruta-puentes.jpg"
+              media="(min-width: 501px)"
+            />
+            <img
+              class="ruta-item__img"
+              src="./assets/img/ruta-puentes.jpg"
+              alt="Ruta de montaña"
+            />
+          </picture>
           <div class="ruta-item__contenido">
             <h2 class="ruta-item__contenido__titulo">Ruta de los Puentes</h2>
             <p class="ruta-item__contenido__info">
@@ -82,5 +119,6 @@
         </article>
       </section>
     </main>
+    <include src="src/footer.html"></include>
   </body>
 </html>

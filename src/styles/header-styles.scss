@@ -5,11 +5,23 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0.5rem 2rem;
 
-  .header__titulo {
-    font-size: 1.5rem;
+  .header-title-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      height: 100%;
+    }
+
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
   }
 }
 
@@ -62,6 +74,16 @@ header {
 
     .navbar__close-toggle {
       display: none;
+    }
+  }
+}
+
+@media (max-width: $laptop-breakpoint) {
+  header {
+    .header-title-container {
+      .header-title {
+        display: none;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cantabria con Perro | Portada</title>
     <link rel="stylesheet" href="styles/styles.scss" />
     <script type="module" src="app.js"></script>
@@ -15,31 +16,39 @@
     <link rel="icon" href="./assets/favicon.ico" />
   </head>
   <body class="body-portada">
-    <img
-      src="./assets/img/fondo-portada.svg"
-      alt="Perro"
-      class="imagen-fondo"
-    />
-    <div class="contenido">
-
-      <!-- Header -->
-      <include src="src/header.html"></include>
-      <!-- Main -->
-      <main>
-        <div class="portada">
-          <div class="titulo-contenedor animate__animated animate__fadeInUp">
-            <h1 class="titulo-contenedor__titulo">CANTABRIA</h1>
-            <p class="titulo-contenedor__subtitulo  animate__animated animate__fadeInUp">
-              Descubre Cantabria con tu perro
-            </p>
+    <div class="portada-container">
+      <img
+        src="./assets/img/fondo-portada.svg"
+        alt="Perro"
+        class="imagen-fondo"
+      />
+      <div class="contenido">
+      
+        <!-- Header -->
+        <include src="src/header.html"></include>
+        <!-- Main -->
+        <main>
+          <div class="portada">
+            <div class="titulo-contenedor animate__animated animate__fadeInUp">
+                <h1 class="titulo-contenedor__titulo">CANTABRIA</h1>
+              <p class="titulo-contenedor__subtitulo  animate__animated animate__fadeInUp">
+                Descubre Cantabria con tu perro
+              </p>
+            </div>
+            <img
+            src="./assets/img/standing-dog.png"
+            alt="Perro"
+            class="imagen-perro"
+            />
+            <img
+            src="./assets/img/water-color.jpg"
+            alt="Water"
+            class="imagen-agua"
+            />
           </div>
-          <img
-          src="./assets/img/standing-dog.png"
-          alt="Perro"
-          class="imagen-perro"
-          />
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
+    <include src="src/footer.html"></include>
   </body>
 </html>

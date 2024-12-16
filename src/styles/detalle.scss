@@ -7,6 +7,7 @@
   justify-content: center;
   padding: 2rem;
   height: fit-content;
+  position: relative;
 
   .detalle-titulo {
     font-size: 2.5rem;
@@ -25,7 +26,8 @@
 
     .detalle-imagen {
       grid-column: 1 / span 1;
-      img {
+
+      img, source {
         width: 100%;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -85,6 +87,18 @@
     &__lista {
       list-style-type: none;
       padding: 0;
+      position: relative;
+
+      
+
+      & li:first-child::before {
+        content: url("../assets/img/pointing-finger.gif");
+        position: absolute;
+        left: -50px;
+        top: 0;
+        transform: scale(0.5);
+        transform-origin: top left;
+      }
 
       li {
         margin-bottom: 1rem;
@@ -104,6 +118,18 @@
           transform: scale(1.02);
         }
       }
+
+  
+    }
+  }
+
+  .detalle-dog-container {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+
+    .detalle-dog {
+      width: 100px;
     }
   }
 }
@@ -112,7 +138,7 @@
   .detalle-main-contenedor {
     max-width: 90%;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
 
     .detalle-contenido {
       display: grid;
@@ -153,6 +179,19 @@
           padding: 1rem;
           font-size: 1.2rem;
         }
+      }
+    }
+
+    .detalle-dog-container {
+      position: relative;
+      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      
+      .detalle-dog {
+        width: 80px;
       }
     }
   }
