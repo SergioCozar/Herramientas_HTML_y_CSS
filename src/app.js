@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentPath = getLastPathSegment(window.location.href);
 
   toggleButton.addEventListener("click", () => {
-    console.log("clicked");
     menu.classList.add("active");
     toggleButton.classList.add("navbar__toggle--hidden");
   });

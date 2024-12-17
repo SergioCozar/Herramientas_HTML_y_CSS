@@ -40,14 +40,45 @@ main {
 
 .body-portada {
   height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 .portada-container {
   height: calc(100% - 50px);
   overflow: hidden;
   display: flex;
+
+  .imagen-fondo-container{
+    position: relative;
+    min-width: 30vw;
+    overflow: hidden;
+    .imagen-fondo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .imagen-agua {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      clip-path: $waves-clip-path;
+      animation: moveWaves 10s linear infinite alternate;   
+      object-fit: cover; 
+      object-position: bottom right;
+    }
+
+    @keyframes moveWaves {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
 
   .contenido {
     width: 100%;
@@ -61,6 +92,7 @@ main {
     align-items: flex-start;
     height: calc(100% - 60px);
     padding-left: 2rem;
+    overflow-x: hidden;
 
     .titulo-contenedor {
       width: fit-content;
@@ -90,15 +122,6 @@ main {
       bottom: 0;
       right: 0;
       height: 450px;
-    }
-
-    .imagen-agua {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 100px;
-      clip-path: $waves-clip-path;
     }
   }
 }
@@ -138,27 +161,36 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../assets/img/fondo-portada.svg");
+    position: relative;
 
-    .imagen-fondo {
-      display: none;
+    .imagen-fondo-container {
+      width: 100vw;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+
+      .imagen-fondo {
+        display: none;
+      }
+
+      .imagen-agua {
+        position: relative;
+      }
     }
 
     .portada {
+      padding: 0 1.5rem;
       .titulo-contenedor {
         &__titulo {
-          font-size: 7rem;
+          font-size: 2.5rem;
         }
         &__subtitulo {
-          font-size: 2.7rem;
+          font-size: 1.5rem;
         }
         padding-bottom: 3rem;
       }
 
       .imagen-perro {
-        display: none;
-      }
-
-      .imagen-agua {
         display: none;
       }
     }

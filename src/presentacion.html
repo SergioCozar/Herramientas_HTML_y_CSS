@@ -32,6 +32,11 @@
         <div class="presentacion-imagen">
           <img
             src="./assets/img/ruta-costa-quebrada.jpg"
+            srcset="
+              ./assets/img/ruta-costa-quebrada-600w.jpg 1x,
+              ./assets/img/ruta-costa-quebrada.jpg 2x
+            "
+            sizes="(max-width: 500px) 500px, 1000px"
             alt="Paisaje de Costa Quebrada"
           />
         </div>
@@ -48,7 +53,7 @@
         <div class="presentacion-video">
           <iframe
             width="100%"
-            height="450"
+            height="100%"
             src="https://www.youtube.com/embed/AAZSjNxfTpQ?si=ZN1dij9mstHlM-QW"
             title="YouTube video player"
             frameborder="0"
@@ -66,6 +71,11 @@
           de una forma única!
         </p>
       </section>
+      <img
+        class="trecking-dog-svg"
+        src="./assets/img/trecking-dog.svg"
+        alt="trecking dog"
+        />
     </main>
     <include src="src/footer.html"></include>
   </body>

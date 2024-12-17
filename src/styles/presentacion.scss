@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  padding-bottom: 0;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 4rem;
 
   .presentacion-titulo {
     font-size: 2.5rem;
@@ -48,19 +48,30 @@
       width: 100%;
       max-width: 800px;
       margin: 1.5rem 0;
+      height: 450px;
     }
+  }
+
+  .trecking-dog-svg {
+    width: 100%;
+    max-width: 800px;
   }
 }
 
 @media (max-width: $tablet-breakpoint) {
   .presentacion-main-contenedor {
     .presentacion-titulo {
-      font-size: 3rem;
+      font-size: 2rem;
+      margin: 0;
     }
 
     .presentacion-contenido {
       &__text {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
+      }
+
+      .presentacion-video {
+        height: 250px;
       }
     }
   }

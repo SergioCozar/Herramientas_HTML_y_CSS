@@ -14,8 +14,12 @@ header {
     align-items: center;
     gap: 0.5rem;
 
-    img {
+    .logo-link {
       height: 100%;
+
+      img {
+        height: 100%;
+      }
     }
 
     .header-title {
@@ -35,8 +39,7 @@ header {
   }
 
   &__toggle {
-    font-size: 3.5rem;
-    padding-top: 1.5rem;
+    font-size: 3rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -55,8 +58,9 @@ header {
     list-style: none;
 
     .menu-item {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       text-decoration: none;
+      transition: transform 0.1s ease-in-out;
 
       &:hover {
         transform: scale(1.1);
@@ -89,6 +93,11 @@ header {
 }
 
 @media (max-width: $tablet-breakpoint) {
+
+  header {
+    padding: 0.5rem 1rem;
+  }
+
   .navbar {
     &__toggle {
       display: block;
@@ -115,7 +124,6 @@ header {
         right: 0;
       }
       .menu-item {
-        font-size: 3rem;
 
         &--inicio {
           margin-right: 0;

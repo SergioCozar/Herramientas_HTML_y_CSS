@@ -73,19 +73,23 @@
 @media (max-width: $tablet-breakpoint) {
   .enlaces-main-contenedor {
     height: fit-content;
+    margin-bottom: 0;
 
     .enlaces-titulo {
-      font-size: 3.5rem;
-      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
     .enlaces-contenido {
+
+      margin: 0;
+
       h2 {
-        font-size: 2.5rem;
-        margin: 2rem 0 1.5rem 0;
+        font-size: 1.4rem;
+        margin: 0 0 1.5rem 0;
       }
 
-      font-size: 1.7rem;
+      font-size: 1rem;
     }
   }
 }

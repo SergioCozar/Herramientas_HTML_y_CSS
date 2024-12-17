@@ -47,4 +47,7 @@ footer {
 }
 
 @media (max-width: $tablet-breakpoint) {
+  .footer-list__item {
+    font-size: 0.8rem;
+  }
 }
