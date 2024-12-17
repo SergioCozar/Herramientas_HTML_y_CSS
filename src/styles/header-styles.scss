@@ -57,6 +57,7 @@ header {
     width: fit-content;
     list-style: none;
 
+
     .menu-item {
       font-size: 1.5rem;
       text-decoration: none;
@@ -120,25 +121,31 @@ header {
       margin: 0;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+      
       &.active {
         right: 0;
       }
       .menu-item {
-
+        
         &--inicio {
           margin-right: 0;
         }
       }
-
+      
+      .close-button-item {
+        align-items: flex-end;
+        width: 100%;
+      }
       .navbar__close-toggle {
         display: block;
-        font-size: 3rem;
+        font-size: 2rem;
         background: none;
         border: none;
         cursor: pointer;
         color: $primary-color;
         align-self: flex-end;
-        margin-right: 1.5rem;
+        text-align: right;
+        width: 100%;
       }
     }
   }
