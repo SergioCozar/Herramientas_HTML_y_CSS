@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cantabria con Perro | Portada</title>
     <link rel="stylesheet" href="styles/styles.scss" />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js" async></script>
+    <script type="module" src="navbar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +22,13 @@
         src="./assets/img/fondo-portada.svg"
         alt="imagen fondo"
         class="imagen-fondo"
+        loading="lazy"
         />
         <img
         src="./assets/img/water-color.jpg"
         alt="Water"
         class="imagen-agua"
+        loading="lazy"
         />
       </div>
       <div class="contenido">
@@ -43,6 +46,7 @@
             <img
             src="./assets/img/standing-dog.png"
             alt="Perro"
+            loading="lazy"
             class="imagen-perro"
             />
           </div>

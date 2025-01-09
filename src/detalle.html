@@ -6,7 +6,8 @@
     <title>Costa Quebrada - Detalles</title>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/detalle.scss" />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js" async></script>
+    <script type="module" src="navbar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,10 +34,10 @@
             <img
               src="./assets/img/ruta-costa-quebrada.jpg"
               alt="Vista de Costa Quebrada"
+              loading="lazy"
             />
           </picture>
         </div>
-        
 
         <ul class="detalle-info">
           <li class="detalle-info__item">
@@ -110,9 +111,10 @@
 
       <div class="detalle-dog-container">
         <img
-        class="detalle-dog"
-        src="./assets/img/detalle-dog.png"
-        alt="perro"
+          class="detalle-dog"
+          src="./assets/img/detalle-dog.png"
+          alt="perro"
+          loading="lazy"
         />
       </div>
     </main>

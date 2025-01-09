@@ -6,7 +6,8 @@
     <title>Cantabria con Perro | Presentación</title>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/presentacion.scss" />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js" async></script>
+    <script type="module" src="navbar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,10 +35,11 @@
             src="./assets/img/ruta-costa-quebrada.jpg"
             srcset="
               ./assets/img/ruta-costa-quebrada-600w.jpg 1x,
-              ./assets/img/ruta-costa-quebrada.jpg 2x
+              ./assets/img/ruta-costa-quebrada.jpg      2x
             "
             sizes="(max-width: 500px) 500px, 1000px"
             alt="Paisaje de Costa Quebrada"
+            loading="lazy"
           />
         </div>
         <p class="presentacion-contenido__text">
@@ -60,6 +62,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
+            loading="lazy"
           ></iframe>
         </div>
         <p class="presentacion-contenido__text">
@@ -75,7 +78,8 @@
         class="trecking-dog-svg"
         src="./assets/img/trecking-dog.svg"
         alt="trecking dog"
-        />
+        loading="lazy"
+      />
     </main>
     <include src="src/footer.html"></include>
   </body>
