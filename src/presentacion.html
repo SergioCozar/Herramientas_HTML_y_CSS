@@ -4,6 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cantabria con Perro | Presentación</title>
+    <!-- CSS crítico -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        background-color: #f8f8f8;
+      }
+    </style>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/presentacion.scss" />
     <script type="module" src="app.js" async></script>
@@ -14,6 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/lite-youtube-embed/src/lite-yt-embed.css"
+    />
+    <script src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
     <link rel="icon" href="./assets/favicon.ico" />
   </head>
   <body>
@@ -32,10 +47,10 @@
         </p>
         <div class="presentacion-imagen">
           <img
-            src="./assets/img/ruta-costa-quebrada.jpg"
+            src="./assets/img/ruta-costa-quebrada.webp"
             srcset="
-              ./assets/img/ruta-costa-quebrada-600w.jpg 1x,
-              ./assets/img/ruta-costa-quebrada.jpg      2x
+              ./assets/img/ruta-costa-quebrada-600w.webp 1x,
+              ./assets/img/ruta-costa-quebrada.webp      2x
             "
             sizes="(max-width: 500px) 500px, 1000px"
             alt="Paisaje de Costa Quebrada"
@@ -53,17 +68,10 @@
           restricciones.
         </p>
         <div class="presentacion-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/AAZSjNxfTpQ?si=ZN1dij9mstHlM-QW"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+          <lite-youtube
+            videoid="AAZSjNxfTpQ"
+            style="width: 100%; height: 100%"
+          ></lite-youtube>
         </div>
         <p class="presentacion-contenido__text">
           A través de las categorías de rutas en nuestra página, puedes explorar

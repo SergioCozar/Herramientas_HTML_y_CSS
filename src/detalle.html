@@ -4,6 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Costa Quebrada - Detalles</title>
+    <!-- CSS crítico -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        background-color: #f8f8f8;
+      }
+    </style>
     <link rel="stylesheet" href="styles/styles.scss" />
     <link rel="stylesheet" href="styles/detalle.scss" />
     <script type="module" src="app.js" async></script>
@@ -24,15 +34,15 @@
         <div class="detalle-imagen">
           <picture>
             <source
-              srcset="./assets/img/ruta-costa-quebrada-500w.jpg"
+              srcset="./assets/img/ruta-costa-quebrada-500w.webp"
               media="(max-width: 500px)"
             />
             <source
-              srcset="./assets/img/ruta-costa-quebrada.jpg"
+              srcset="./assets/img/ruta-costa-quebrada.webp"
               media="(min-width: 501px)"
             />
             <img
-              src="./assets/img/ruta-costa-quebrada.jpg"
+              src="./assets/img/ruta-costa-quebrada.webp"
               alt="Vista de Costa Quebrada"
               loading="lazy"
             />
@@ -112,7 +122,7 @@
       <div class="detalle-dog-container">
         <img
           class="detalle-dog"
-          src="./assets/img/detalle-dog.png"
+          src="./assets/img/detalle-dog.webp"
           alt="perro"
           loading="lazy"
         />

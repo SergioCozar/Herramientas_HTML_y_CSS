@@ -26,14 +26,6 @@ li {
   }
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  height: fit-content;
-  background-color: $background-color;
-}
-
 main {
   height: 100%;
 }
@@ -47,7 +39,7 @@ main {
   overflow: hidden;
   display: flex;
 
-  .imagen-fondo-container{
+  .imagen-fondo-container {
     position: relative;
     min-width: 30vw;
     overflow: hidden;
@@ -65,8 +57,8 @@ main {
       width: 200%;
       height: 100px;
       clip-path: $waves-clip-path;
-      animation: moveWaves 10s linear infinite alternate;   
-      object-fit: cover; 
+      animation: moveWaves 10s linear infinite alternate;
+      object-fit: cover;
       object-position: bottom right;
     }
 
@@ -124,6 +116,11 @@ main {
       height: 450px;
     }
   }
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: $desktop-breakpoint) {

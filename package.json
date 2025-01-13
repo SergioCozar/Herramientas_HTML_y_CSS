@@ -24,6 +24,7 @@
     "svgo": "^3.3.2"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "lite-youtube-embed": "^0.3.3"
   }
 }
